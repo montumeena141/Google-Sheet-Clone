@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/******************* Page Action Container ********************************/
+
+.page-action-container{
+    height: 3rem;
+    background-color: #218c74;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 1rem;
+}
+
+.page-action{
+    width: 3.5rem;
+    height: 2rem;
+    color: #f1f2f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected-page-action{
+    background-color: #f1f2f6;
+    color: #218c74;
+}
+
+/******************* Cell Props Action Container ********************************/
+
+.cellprops-action-container{
+    height: 3rem;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+.cellprops-action-container > * {
+    display: inline-block;
+    margin-right: 1rem;
+}
+.cellprops-action-container > *:hover{
+    cursor: pointer;
+}
+.cellprops-action-container > select{
+    border: none;
+    padding: 0.2rem;
+    border-radius: 2px;
+    outline: none;
+}
+.color-prop{
+    position: relative;
+}
+.color-prop > input{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/******************* Formula Action Container ********************************/
+.formula-action-container{
+    height: 2rem;
+    background-color: #eef1f1;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+.formula-action-container > * {
+    display: inline-block;
+    margin-right: 0.7rem;
+}
+.formula-action-container > input{
+    border: none;
+    outline: none;
+    height: 70%;
+}
+.formula-icon{
+    height: 1.2rem;
+    width: 1.2rem;
+}
+.address-bar{
+    width: 5rem;
+    text-align: center ;
+}
+.formula-bar{
+    width: calc(100vw - 5rem - 0.7rem - 0.7rem - 0.7rem - 1.2rem);
+}
+
+/******************* Grid Action Container ********************************/
+
+.grid-action-container{
+    height: calc(100vh - 11rem);
+    position: relative;
+    overflow: scroll;
+    background-color: #fdfdfd;
+}
+.top-left-dummy{
+    height: 2rem;
+    width: 2rem;
+    background-color: #747d8c;
+    position: fixed;
+    z-index: 2;
+}
+.address-col-container{
+    width: 2rem;
+    position: sticky;
+    top: 2rem;
+    left: 0;
+}
+.cells-container{
+    position: absolute;
+    top: 0;
+    left: 2rem;
+}
+.address-row-container{
+    height: 2rem;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 2rem;
+}
+.address-col{
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dfe4ea;
+}
+.address-row{
+    height: 2rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dfe4ea;
+}
+.cell-row{
+    display: flex;
+}
+.cell{
+    height: 2rem;
+    width: 5rem;
+    border: 1px solid #dfe4ea;
+    outline: none;
+}
+
+/******************* Sheet Action Container ********************************/
+
+/*  */
+
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+}
+
+.app-name {
+    font-size: 24px;
+    font-weight: 500;
+    color: #5f6368;
+    font-family: 'Google Sans', Arial, sans-serif;
+}
+
