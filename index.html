@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Google Sheet</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="https://www.gstatic.com/images/branding/product/1x/sheets_2020q4_48dp.png" alt="Google Sheets Logo" class="logo">
+            <span class="app-name">Google Sheet</span>
+        </div>
+    </nav>
+
+    <div class="cellprops-action-container">
+        
+        <select class="font-family-prop">
+            <option value="monospace">Monospace</option>
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Georgia">Georgia</option>
+        </select>
+        <select class="font-size-prop">
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+            <option value="24">24</option>
+            <option value="28">28</option>
+            <option value="32">32</option>
+        </select>
+        <span class="material-icons bold">format_bold</span>
+        <span class="material-icons italic">format_italic</span>
+        <span class="material-icons underline">format_underlined</span>
+        <span class="left material-icons alignment">format_align_left</span>
+        <span class="center material-icons alignment">format_align_justify</span>
+        <span class="right material-icons alignment">format_align_right</span>
+        <div class="color-prop">
+            <span class="material-icons">format_color_text</span>
+            <input type="color" class="font-color-prop" >
+        </div>
+        <div class="color-prop">
+            <span class="material-icons">format_color_fill</span>
+            <input type="color" class="bg-color-prop" >
+        </div>
+        
+    </div>
+
+
+
+    <div class="formula-action-container">
+        <input type="text" readonly class="address-bar">
+        
+        <input type="text" class="formula-bar">
+    </div>
+
+
+
+    <div class="grid-action-container">
+        <div class="top-left-dummy"></div>
+        <div class="address-col-container"></div>
+        <div class="cells-container">
+            <div class="address-row-container"></div>
+        </div>
+    </div>
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
